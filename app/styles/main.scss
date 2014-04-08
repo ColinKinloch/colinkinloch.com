@@ -1,0 +1,90 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+$font-family-base: serif;
+$brand-primary: white;
+$text-color: $brand-primary;
+$link-color: $brand-primary;
+$dropdown-header-color: $link-color;
+$dropdown-link-color: $link-color;
+$navbar-default-color: $text-color;
+$navbar-default-link-color: $text-color;
+$navbar-default-link-hover-color: darken($text-color, 15%);
+$link-color-hover: darken($link-color, 15%);
+$body-bg: #22222c;
+$dropdown-color: $brand-primary;
+$dropdown-divider-bg: $brand-primary;
+
+$cv-text-color: black;
+$cv-link-color: black;
+$cv-bg: white;
+$cv-font-family-base: $font-family-base;
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+body{
+	padding-top: $navbar-height;
+	font-family: $font-family-base;
+	margin: 8px;
+}
+
+
+.line-navbar {
+	border: 0;
+	border-bottom: 1px solid;
+	background: $body-bg;
+	border-radius: 0;
+	margin: 0 5px;
+	.nav {
+		.navbar-brand {
+			font-size: 2em;
+		}
+		.dropdown-menu {
+			padding: 0;
+			border: 1px solid;
+			border-right: 0;
+			border-radius: 0;
+			background: $body-bg;
+			min-width: 0;
+			li {
+				border-bottom: 1px solid;
+				&.divider {
+					margin: 0;
+					border-bottom: 2px solid;
+				}
+				&:last-child {
+					border-bottom: 0;
+				}
+				a {
+					padding: 4px 6px;
+				}
+			}
+		}
+	}
+}
+
+.doc-well {
+	font-family: $cv-font-family-base;
+	color: $cv-text-color;
+	background: $cv-bg;
+	overflow-x: scroll;
+	max-width: 800px;
+	box-shadow: inset 1px 1px 4px #bbb;
+	#cv-doc {
+		width: 775px;
+		a {
+			color: $cv-link-color;
+		}
+		table {
+			td {
+				padding-right: 1em;
+			}
+		}
+	}
+}
+
+.md {
+	white-space: pre-wrap;
+	font-family: monospace;
+}
