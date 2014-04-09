@@ -52,6 +52,9 @@
     "node": ">=0.8.0",
     "npm": ">= 1.0.0"
   },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install && ./node_modules/grunt-cli/bin/grunt"
+  },
   "private": true,
   "main": "server.js"
 }
