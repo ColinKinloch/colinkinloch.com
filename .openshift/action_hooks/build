@@ -1,2 +1,2 @@
-(cd "${OPENSHIFT_REPO_DIR}"; node_modules/bower/bin/bower install)
-(cd "${OPENSHIFT_REPO_DIR}"; node_modules/grunt-cli/bin/grunt)
+(cd "${OPENSHIFT_REPO_DIR}"; node_modules/bower/bin/bower install > bower.log)
+(cd "${OPENSHIFT_REPO_DIR}"; node_modules/grunt-cli/bin/grunt > grunt.log)
