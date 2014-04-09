@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var exec = require('child_process').exec;
+//var exec = require('child_process').exec;
 //exec('gem install compass', function(){});c
 
 var bower = require('bower');
