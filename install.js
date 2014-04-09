@@ -1,7 +1,12 @@
 #!/usr/bin/env node
 
-var bower = require('bower');
-bower.commands.install();
+var exec = require('child_process').exec;
+exec('gem install compass', function(){
+	
+	var bower = require('bower');
+	bower.commands.install();
 
-var grunt = require('grunt');
-grunt.cli();
+	var grunt = require('grunt');
+	grunt.cli();
+	
+});
