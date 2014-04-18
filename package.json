@@ -52,7 +52,6 @@
     "npm": ">= 1.0.0"
   },
   "scripts": {
-    "postinstall": "HOME=$HOME/app-root/runtime ./install.js"
   },
   "private": true,
   "main": "server.js"
