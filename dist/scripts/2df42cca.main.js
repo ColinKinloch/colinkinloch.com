@@ -1,0 +1,1 @@
+"use strict";console.log("'Allo 'Allo!");var cvDoc=jQuery("#cv-doc");jQuery.get("/cv.md",function(a){cvDoc.html(a).addClass("md"),marked(a,{tables:!0},function(a,b){cvDoc.html(b).removeClass("md")})});
